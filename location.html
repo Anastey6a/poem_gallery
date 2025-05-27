@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favic.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4724b0e1a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Poetry Gallery | Poems</title>
+</head>
+<body>
+    <div class="main-wrap-location">
+        <div class="button-location">
+            <a href="index.html">
+                <span><i class="fa-solid fa-chevron-left"></i></span> Main Page
+            </a>
+        </div>
+        <div class="gallery-works">
+            <h2>My poems</h2>
+            <div class="filters">
+                <button class="filter-btn filter-btn-styled" data-category="all">Усі</button>
+                <button class="filter-btn filter-btn-styled" data-category="love">Любовна лірика</button>
+               <!-- <button class="filter-btn filter-btn-styled" data-category="nature">Природа</button>-->
+                <button class="filter-btn filter-btn-styled" data-category="philosophy">Філософія</button>
+            </div>
+            <div class="poems-grid">
+                <div class="poem-card" data-category="love">
+                    <h3>Без нього </h3>
+                    <p class="author">Автор: Дарія Митчик</p>
+                    <p class="excerpt">
+                        (29.03.23)<br>
+                        Певна, ви читали про кохання<br />
+                        Як оспівуюють його в піснях
+                        Але ж знову таки...
+                        
+                        <a href="#" class="read-more" data-poem="full-poem-1" aria-label="Читати повний текст вірша 'Сяйво кохання'">Читати далі</a>
+                    </p>
+                </div>
+                <div class="poem-card" data-category="love">
+                    <h3>Залишив </h3>
+                    <p class="author">Автор:Дарія Митчик</p>
+                    <p class="excerpt">
+                        (24.01.2025) <br>
+                        залишив<br>
+                        залишив,та й пішов <br />
+                        одну,оголену й таку дурну
+                        йшов та не озирався
+                        хм мабуть,боявся...
+                        <a href="#" class="read-more" data-poem="full-poem-2" aria-label="Читати повний текст вірша 'Лісова тиша'">Читати далі</a>
+                    </p>
+                </div>
+                <div class="poem-card" data-category="philosophy">
+                    <h3>Душі </h3>
+                    <p class="author">Автор: Дарія Митчик</p>
+                    <p class="excerpt">
+                        (09.11.2024) <br>
+                        і душі відлетіли у неокрайне небо<br>
+                        у те,де шукали хмари <br />
+                        де світить сонце й бавить 
+                        де все без гріху,та страждань...
+                        <a href="#" class="read-more" data-poem="full-poem-3" aria-label="Читати повний текст вірша 'Ехо вічності'">Читати далі</a>
+                    </p>
+                </div>
+
+                <div class="poem-card" data-category="love">
+                    <h3>Три роки кохання... </h3>
+                    <p class="author">Автор: Дарія Митчик</p>
+                    <p class="excerpt">
+                        (10.10.2023) <br>
+                        я кохаю щиро й до безстями<br>
+                        з кожнем днем росте моє чуття<br>
+                        і не знаю чи осилю те є відчуття<br />
+                        знаю лиш одне, я ,що та фраза клята і сумна...
+                         
+                        <a href="#" class="read-more" data-poem="full-poem-4" aria-label="Читати повний текст вірша 'Ехо вічності'">Читати далі</a>
+                    </p>
+                </div>
+
+                <div class="poem-card" data-category="philosophy">
+                    <h3>Тієї темної зими  </h3>
+                    <p class="author">Автор: Дарія Митчик</p>
+                    <p class="excerpt">
+                        - <br>
+                        і знову мчу додому<br>
+                        вкутатись у м‘ягкий і теплий плед<br />
+                        і знову хочу я відчути спокій 
+                        який панував тієї темної зими... 
+                        <a href="#" class="read-more" data-poem="full-poem-5" aria-label="Читати повний текст вірша 'Ехо вічності'">Читати далі</a>
+                    </p>
+                </div>
+                <div class="poem-card" data-category="philosophy">
+                    <h3>29.04.2025</h3>
+                    <p class="author">Автор: Дарія Митчик</p>
+                    <p class="excerpt">
+                        залиш мене,покинь <br />
+                        сховай ті очі під пітьмою... 
+                        <a href="#" class="read-more" data-poem="full-poem-6" aria-label="Читати повний текст вірша 'Ехо вічності'">Читати далі</a>
+                    </p>
+                </div>
+
+                <div class="poem-card" data-category="philosophy">
+                    <h3>Без назви </h3>
+                    <p class="author">Автор: Дарія Митчик</p>
+                    <p class="excerpt">
+                        сміюсь сама із себе <br />
+                        якою дурною тоді я була... 
+                        <a href="#" class="read-more" data-poem="full-poem-7" aria-label="Читати повний текст вірша 'Ехо вічності'">Читати далі</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно -->
+        <div class="modal" id="poem-modal">
+            <div class="modal-content">
+                <span class="close" aria-label="Закрити модальне вікно">×</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-author"></p>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+                <!-- Додайте більше карток за потреби -->
+            </div>
+            <section class="artist-bio">
+                <div class="bio-header" style="display: flex; align-items: center; gap: 15px;">
+                    <i class="fa-solid fa-pen-nib" style="font-size: 28px; color: #58b5dc;"></i>
+                    <h2 style="margin: 0;">Про автора</h2>
+                    <img src="auth.JPG" alt="Дарія Митчик" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 2px solid #58b5dc;">
+                </div>
+                <br>
+                <h3 style="font-weight: 600; font-family:Roboto; font-size: 30px; color: #58b5dc; margin-bottom: 10px;">Відкриття Душі</h3>
+                <p>Вітаю на моїй сторінці, де слова стають відлунням найглибших емоцій. Мене звати <b> Дарія Митчик</b>, я студентка 3-го курсу Київського національного університету технологій та дизайну.</p>
+                <p>Моя поезія народилася у вогні найболючіших переживань. З початком повномасштабної війни, коли світ навколо похитнувся, біль і глибокі емоції відкрили в мені голос, який заговорив віршами.</p>
+                <p>Я за своєю натурою емоційна та творча людина, і поезія стала для мене особливим шляхом, щоб висловити те, що іноді неможливо сказати словами. Кожен вірш — це частинка моєї душі, щире відображення переживань, сподівань і роздумів у складні часи.</p>
+                <p>Запрошую вас зануритися у світ моїх почуттів. Можливо, у цих рядках ви знайдете щось близьке і для себе.</p>
+                <a href="https://t.me/darrioo25" class="bio-button" style="display: inline-block; font-family: Roboto; padding: 10px 20px; background-color: #58b5dc; color: white; border-radius: 5px; text-decoration: none; margin-top: 15px;">Дізнатися більше</a>
+            </section>
+            
+        </div>
+    </div>
+    <!-- Модальне вікно -->
+    <div class="modal" id="poem-modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-author"></p>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <footer class="footer-location">
+        <div class="wrap">
+            <div>
+                <h3>Поетична галерея</h3>
+            </div>
+            <div>
+                <p>
+                    Поетична галерея відкрита для всіх поціновувачів слова. 
+                    Відвідуйте нас за адресою: вул. Невмировича-Данченка 2, Київ, Україна. 
+                    Ми працюємо з 8:00 до 21:00 щодня.
+                </p>
+            </div>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

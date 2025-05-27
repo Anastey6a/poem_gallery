@@ -1,0 +1,1822 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent box-sizing */
+  }
+  
+  :root {
+    --brown: #58b5dc;
+    --black: #151515;
+    --grey: #444444;
+  }
+  
+  /* ----------index------------ */
+  body {
+    width: 100%;
+    background-color: #fcfaf9;
+    font-family: "Outfit", sans-serif;
+    color: var(--grey);
+    margin: 0 auto; /* Center content */
+  }
+  
+  h1,
+  h2,
+  h3,
+  a {
+    font-family: "Big Shoulders Display", cursive;
+    color: var(--black);
+    text-transform: uppercase;
+  }
+  
+  .black {
+    display: none;
+  }
+  
+  .woman {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .woman img {
+    width: 100%;
+    height: auto; /* Ensure images scale properly */
+  }
+  
+  h1 {
+    width: 90%;
+    margin: 32px auto;
+    font-size: 60px;
+    line-height: 55px;
+  }
+  
+  header p {
+    margin: 0 auto 32px;
+    width: 90%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  .button-index {
+    display: inline-block;
+    margin: 0 auto 120px 5%;
+    padding: 24px 0 24px 35px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.5px;
+    color: white;
+    background-color: var(--black);
+  }
+  
+  .button-index span {
+    margin-left: 25px;
+    padding: 24px;
+    background-color: var(--mint);
+  }
+  
+  main {
+    margin: 0 auto 120px;
+    width: 95%; /* Increased width for more expansive feel */
+    max-width: 1600px; /* Allow content to scale on larger screens */
+  }
+  
+  main img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .up h2 {
+    margin: 25px 0 21px;
+    font-size: 50px;
+    line-height: 45px;
+  }
+  
+  .up p {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+    order: -1;
+  }
+  
+  .left {
+    margin-bottom: 16px;
+  }
+  
+  .inspired {
+    margin-top: 16px;
+    padding: 48px 24px;
+    width: 100%;
+    background-color: var(--black);
+    color: white;
+  }
+  
+  .inspired h2 {
+    margin-bottom: 24px;
+    font-size: 50px;
+    line-height: 45px;
+    color: white;
+  }
+  
+  .inspired p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  footer {
+    background-color: var(--black);
+    padding: 48px 32px;
+  }
+  
+  footer h3 {
+    font-size: 23px;
+    line-height: 22px;
+    color: white;
+  }
+  
+  footer p {
+    margin: 38px 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+  }
+  
+  footer a {
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Tablet Breakpoint */
+  @media (min-width: 768px) {
+    body {
+      max-width: 100%; /* Full width for expansive layout */
+    }
+  
+    header {
+      position: relative;
+      width: 100%;
+      height: 750px; /* Slightly taller for better visual impact */
+      margin-bottom: 140px;
+    }
+  
+    .header-text {
+      position: absolute;
+      top: 300px;
+      left: 50%;
+      transform: translateX(-50%); /* Center text */
+      width: 80%;
+      max-width: 600px;
+    }
+  
+    .woman {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0; /* Expand to full width */
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  
+    .woman img {
+      width: 100%;
+      height: 750px;
+      object-fit: cover; /* Ensure image fills space */
+    }
+  
+    h1 {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      font-size: 80px; /* Larger for impact */
+      line-height: 70px;
+    }
+  
+    header p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .button-index {
+      margin: 48px auto; /* Center button */
+      display: block;
+      text-align: center;
+    }
+  
+    main {
+      width: 95%;
+      max-width: 1200px; /* Wider content area */
+    }
+  
+    .up {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .up-text {
+      flex-basis: 40%; /* Adjusted for balance */
+    }
+  
+    .up h2 {
+      margin: 0 0 24px;
+      font-size: 55px;
+      line-height: 50px;
+    }
+  
+    .up p {
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .up-text h2 {
+      font-family: 'Roboto', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  .up-text p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+  }
+    .down {
+      display: flex;
+      gap: 20px; /* Increased gap for spaciousness */
+    }
+  
+    .left {
+      margin-bottom: 0;
+      flex-basis: 60%;
+    }
+  
+    .right {
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .inspired {
+      margin-top: 20px;
+      padding: 80px 50px; /* More padding for expansiveness */
+    }
+  
+    .inspired p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    footer {
+      display: flex;
+      padding: 60px 50px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    footer h3 {
+      width: 200px;
+      margin-right: 20px;
+    }
+  
+    footer p {
+      margin-right: 100px;
+      width: 350px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  
+    .social {
+      width: auto;
+      display: flex;
+      gap: 25px;
+    }
+  }
+  
+  /* Desktop Breakpoint */
+  @media (min-width: 1440px) {
+    body {
+      max-width: 100%; /* Full width */
+      margin: 0 auto;
+    }
+  
+    header {
+      margin-bottom: 200px;
+      height: 900px; /* Taller header for larger screens */
+      width: 100%;
+    }
+  
+    .black {
+      display: block;
+      width: 600px; /* Wider black section */
+      height: 900px;
+    }
+  
+    .black h1 {
+      width: 600px;
+      top: 200px;
+      left: 165px;
+      font-size: 110px; /* Larger for impact */
+      line-height: 100px;
+    }
+  
+    .woman {
+      left: 600px;
+      right: 0; /* Expand to right edge */
+    }
+  
+    .woman img {
+      height: 900px;
+      object-fit: cover;
+    }
+  
+    .woman h1 {
+      top: 200px;
+      left: -350px;
+      width: 600px;
+      font: 110px;
+      line-height: 100px;
+    }
+  
+    .header-text {
+      top: 220px;
+      left: 65%;
+      width: 450px;
+    }
+  
+    header p {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  
+    .button-index {
+      margin: 60px auto;
+      padding: 30px 0 30px 45px;
+      font-size: 24px;
+      letter-spacing: 4px;
+    }
+  
+    .button-index span {
+      padding: 30px;
+    }
+  
+    main {
+      width: 95%;
+      max-width: 1600px; /* Wider for large screens */
+    }
+  
+    .up {
+      margin-bottom: 50px;
+      gap: 40px;
+    }
+  
+    .up h2 {
+      font-size: 70px;
+      line-height: 65px;
+    }
+  
+    .up p {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  
+    .down {
+      margin-bottom: 200px;
+      gap: 40px;
+    }
+  
+    .left {
+      flex-basis: 65%;
+    }
+  
+    .right {
+      flex-basis: 35%;
+      gap: 40px;
+    }
+  
+    .inspired {
+      padding: 80px 60px;
+    }
+  
+    .inspired h2 {
+      font-size: 70px;
+      line-height: 65px;
+    }
+  
+    .inspired p {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  
+    footer {
+      width: 100%;
+      max-width: 1600px;
+      padding: 100px 200px; /* More padding for expansive feel */
+    }
+  
+    footer h3 {
+      width: 250px;
+      font-size: 50px;
+      line-height: 48px;
+    }
+  
+    footer p {
+      width: 500px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  
+  /* ----------location------------ */
+  .main-wrap-location {
+    width: 100%;
+    font-size: 0;
+  }
+  
+  .button-location a {
+    position: absolute;
+    display: inline-block;
+    padding: 24px 35px 24px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.5px;
+    color: white;
+    background-color: var(--black);
+  }
+  
+  .button-location span {
+    margin-right: 25px;
+    padding: 24px;
+    background-color: var(--mint);
+  }
+  
+  .black-location {
+    padding: 48px 16px 56px;
+    width: 100%;
+    background-color: var(--black);
+  }
+  
+  .black-location h2 {
+    font-size: 50px;
+    line-height: 45px;
+    color: white;
+  }
+  
+  .text-address h3 {
+    margin: 48px 0 20px;
+    font-size: 32px;
+    color: var(--black);
+  }
+  
+  .text-address p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+  }
+  
+  .footer-location {
+    background-color: var(--mint);
+  }
+  
+  .footer-location h3,
+  .footer-location p,
+  .footer-location a {
+    color: var(--black);
+  }
+  
+  @media (min-width: 768px) {
+    .main-wrap-location {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .button-location a {
+      top: 0;
+      left: 50px;
+      padding: 24px 40px 24px 0;
+    }
+  
+    .black-location {
+      padding: 100px 60px; /* More padding */
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .black-location h2 {
+      font-size: 60px;
+      line-height: 55px;
+    }
+  
+    .text-address {
+      width: 55%;
+    }
+  
+    .text-address h3 {
+      margin: 0 0 24px;
+      font-size: 36px;
+    }
+  
+    .text-address p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .wrap {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .main-wrap-location {
+      width: 100%;
+      max-width: 1600px; /* Wider for expansive layout */
+      margin: 0 auto;
+    }
+  
+    .button-location {
+      width: 600px;
+      height: 120px;
+      top: 0;
+      left: 200px;
+    }
+  
+    .button-location a {
+      padding: 30px 45px 30px 0;
+      font-size: 24px;
+      letter-spacing: 4px;
+    }
+  
+    .button-location span {
+      padding: 30px;
+    }
+  
+    .black-location {
+      padding: 120px 200px 80px; /* More spacious */
+    }
+  
+    .black-location h2 {
+      width: 450px;
+      font-size: 80px;
+      line-height: 75px;
+    }
+  
+    .text-address h3 {
+      margin-bottom: 30px;
+      font-size: 40px;
+    }
+  
+    .text-address p {
+      margin-bottom: 40px;
+      font-size: 24px;
+      line-height: 34px;
+    }
+  
+    .footer-location {
+      padding: 100px 200px;
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+  
+    .footer-location h3 {
+      width: 350px;
+      font-size: 50px;
+      line-height: 48px;
+    }
+  }
+  /* ----------location------------ */
+.main-wrap-location {
+    width: 100%;
+    font-size: 0;
+  }
+  
+  .button-location a {
+    position: absolute;
+    display: inline-block;
+    padding: 24px 35px 24px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.5px;
+    color: white;
+    background-color: var(--black);
+  }
+  
+  .button-location span {
+    margin-right: 25px;
+    padding: 24px;
+    background-color: var(--mint);
+  }
+  
+  .gallery-works {
+    margin: 120px auto;
+    width: 95%;
+    max-width: 1600px;
+  }
+  
+  .gallery-works h2 {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 32px;
+    color: var(--black);
+  }
+  
+  .works-grid {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .work-item {
+    padding: 16px;
+    vertical-align: top;
+  }
+  
+  .work-item picture {
+    width: 100%;
+    display: block;
+    height: 200px; /* Фіксована висота */
+    overflow: hidden;
+  }
+  
+  .work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .work-item img:active,
+  .work-item img.touch-active {
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+  
+  .work-description {
+    padding: 24px;
+    background-color: #f5f5f5;
+  }
+  
+  .work-description h3 {
+    font-size: 32px;
+    line-height: 28px;
+    color: var(--black);
+    margin-bottom: 16px;
+  }
+  
+  .work-description p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--grey);
+    margin-bottom: 12px;
+  }
+  
+  .work-description .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--black);
+  }
+  
+  .artist-bio {
+    margin-top: 40px;
+    padding: 24px;
+    background-color: #fafafa;
+  }
+  
+  .artist-bio h2 {
+    font-size: 40px;
+    line-height: 36px;
+    color: var(--black);
+    margin-bottom: 16px;
+  }
+  
+  .artist-bio p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--grey);
+  }
+  
+  .footer-location {
+    background-color: var(--black);
+  }
+  
+  .footer-location h3,
+  .footer-location p,
+  .footer-location a {
+    color: var(--black);
+  }
+  
+  @media (min-width: 768px) {
+    .main-wrap-location {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .button-location a {
+      top: 0;
+      left: 50px;
+      padding: 24px 40px 24px 0;
+    }
+  
+    .gallery-works {
+      width: 95%;
+      max-width: 1200px;
+    }
+  
+    .gallery-works h2 {
+      font-size: 55px;
+      line-height: 50px;
+    }
+  
+    .work-item {
+      width: 50%;
+      padding: 20px;
+    }
+  
+    .work-item picture {
+      height: 250px;
+    }
+  
+    .work-description {
+      padding: 32px;
+    }
+  
+    .work-description h3 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  
+    .work-description p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .work-description .price {
+      font-size: 22px;
+    }
+  
+    .artist-bio {
+      padding: 32px;
+    }
+  
+    .artist-bio h2 {
+      font-size: 48px;
+      line-height: 44px;
+    }
+  
+    .artist-bio p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .footer-location {
+      display: flex;
+      padding: 60px 50px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .footer-location .wrap {
+      display: flex;
+    }
+  
+    .footer-location h3 {
+      width: 200px;
+      margin-right: 20px;
+    }
+  
+    .footer-location p {
+      margin-right: 100px;
+      width: 350px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .main-wrap-location {
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+  
+    .button-location {
+      width: 600px;
+      height: 120px;
+      top: 0;
+      left: 200px;
+    }
+  
+    .button-location a {
+      padding: 30px 45px 30px 0;
+      font-size: 24px;
+      letter-spacing: 4px;
+    }
+  
+    .button-location span {
+      padding: 30px;
+    }
+  
+    .gallery-works {
+      width: 95%;
+      max-width: 1600px;
+    }
+  
+    .gallery-works h2 {
+      font-size: 70px;
+      line-height: 65px;
+    }
+  
+    .work-item {
+      width: 33.33%;
+      padding: 40px;
+    }
+  
+    .work-item picture {
+      height: 300px;
+    }
+  
+    .work-description {
+      padding: 40px;
+    }
+  
+    .work-description h3 {
+      font-size: 40px;
+      margin-bottom: 24px;
+    }
+  
+    .work-description p {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  
+    .work-description .price {
+      font-size: 24px;
+    }
+  
+    .artist-bio {
+      padding: 40px;
+    }
+  
+    .artist-bio h2 {
+      font-size: 56px;
+      line-height: 52px;
+    }
+  
+    .artist-bio p {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  
+    .footer-location {
+      padding: 100px 200px;
+      width: 100%;
+      max-width: 1600px;
+    }
+  
+    .footer-location h3 {
+      width: 250px;
+      font-size: 50px;
+      line-height: 48px;
+    }
+  
+    .footer-location p {
+      width: 500px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  /* ----------location------------ */
+.main-wrap-location {
+    width: 100%;
+    font-size: 0;
+  }
+  
+  .button-location a {
+    position: absolute;
+    display: inline-block;
+    padding: 24px 35px 24px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.5px;
+    color: white;
+    background-color: var(--black);
+  }
+  
+  .button-location span {
+    margin-right: 25px;
+    padding: 24px;
+    background-color: var(--mint);
+  }
+  
+  .gallery-works {
+    margin: 120px auto;
+    width: 95%;
+    max-width: 1600px;
+  }
+  
+  .gallery-works h2 {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 32px;
+    color: var(--black);
+  }
+  
+  .works-grid {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .work-item {
+    padding: 16px;
+    vertical-align: top;
+  }
+  
+  .work-item picture {
+    width: 100%;
+    display: block;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .work-item img:active,
+  .work-item img.touch-active {
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+  
+  .work-description {
+    padding: 24px;
+    background-color: #f5f5f5;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .work-description h3 {
+    font-size: 32px;
+    line-height: 28px;
+    color: var(--black);
+    margin-bottom: 16px;
+    order: 1;
+  }
+  
+  .work-description p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--grey);
+    margin-bottom: 12px;
+    order: 2;
+    flex-grow: 1;
+  }
+  
+  .work-description .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 0;
+    order: 3;
+  }
+  
+  .artist-bio {
+    margin-top: 40px;
+    padding: 32px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8ecef 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center; /* Центрування вмісту */
+  }
+  
+  .artist-bio .bio-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  
+  .artist-bio .bio-header i {
+    font-size: 24px;
+    color: var(--brown);
+    margin-right: 12px;
+  }
+  
+  .artist-bio h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    line-height: 36px;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .artist-bio h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--brown); /* Декоративна лінія */
+  }
+  
+  .artist-bio p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--grey);
+    max-width: 800px;
+    margin: 16px auto;
+  }
+  
+  .artist-bio .bio-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: var(--mint);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 16px;
+  }
+  
+  .artist-bio .bio-button:hover {
+    background-color: var(--black);
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .footer-location {
+    background-color: var(--mint);
+  }
+  
+  .footer-location h3,
+  .footer-location p,
+  .footer-location a {
+    color: var(--black);
+  }
+  
+  @media (min-width: 768px) {
+    .main-wrap-location {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .button-location a {
+      top: 0;
+      left: 50px;
+      padding: 24px 40px 24px 0;
+    }
+  
+    .gallery-works {
+      width: 95%;
+      max-width: 1200px;
+    }
+  
+    .gallery-works h2 {
+      font-size: 55px;
+      line-height: 50px;
+    }
+  
+    .work-item {
+      width: 50%;
+      padding: 20px;
+    }
+  
+    .work-item picture {
+      height: 250px;
+    }
+  
+    .work-description {
+      padding: 32px;
+      min-height: 220px;
+    }
+  
+    .work-description h3 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  
+    .work-description p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
+  
+    .work-description .price {
+      font-size: 22px;
+    }
+  
+    .artist-bio {
+      padding: 40px;
+    }
+  
+    .artist-bio .bio-header i {
+      font-size: 28px;
+      margin-right: 16px;
+    }
+  
+    .artist-bio h2 {
+      font-size: 48px;
+      line-height: 44px;
+      padding-bottom: 16px;
+    }
+  
+    .artist-bio h2::after {
+      width: 100px;
+    }
+  
+    .artist-bio p {
+      font-size: 20px;
+      line-height: 32px;
+      margin: 20px auto;
+    }
+  
+    .artist-bio .bio-button {
+      font-size: 18px;
+      padding: 14px 28px;
+    }
+  
+    .footer-location {
+      display: flex;
+      padding: 60px 50px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .footer-location .wrap {
+      display: flex;
+    }
+  
+    .footer-location h3 {
+      width: 200px;
+      margin-right: 20px;
+    }
+  
+    .footer-location p {
+      margin-right: 100px;
+      width: 350px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .main-wrap-location {
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+  
+    .button-location {
+      width: 600px;
+      height: 120px;
+      top: 0;
+      left: 200px;
+    }
+  
+    .button-location a {
+      padding: 30px 45px 30px 0;
+      font-size: 24px;
+      letter-spacing: 4px;
+    }
+  
+    .button-location span {
+      padding: 30px;
+    }
+  
+    .gallery-works {
+      width: 95%;
+      max-width: 1600px;
+    }
+  
+    .gallery-works h2 {
+      font-size: 70px;
+      line-height: 65px;
+    }
+  
+    .work-item {
+      width: 33.33%;
+      padding: 40px;
+    }
+  
+    .work-item picture {
+      height: 250px;
+    }
+  
+    .work-description {
+      padding: 40px;
+      min-height: 240px;
+    }
+  
+    .work-description h3 {
+      font-size: 40px;
+      margin-bottom: 24px;
+    }
+  
+    .work-description p {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 20px;
+    }
+  
+    .work-description .price {
+      font-size: 24px;
+    }
+  
+    .artist-bio {
+      padding: 48px;
+      margin-top: 60px;
+    }
+  
+    .artist-bio .bio-header i {
+      font-size: 32px;
+      margin-right: 20px;
+    }
+  
+    .artist-bio h2 {
+      font-size: 56px;
+      line-height: 52px;
+      padding-bottom: 20px;
+    }
+  
+    .artist-bio h2::after {
+      width: 120px;
+    }
+  
+    .artist-bio p {
+      font-size: 22px;
+      line-height: 34px;
+      max-width: 1000px;
+      margin: 24px auto;
+    }
+  
+    .artist-bio .bio-button {
+      font-size: 20px;
+      padding: 16px 32px;
+    }
+  
+    .footer-location {
+      padding: 100px 200px;
+      width: 100%;
+      max-width: 1600px;
+    }
+  
+    .footer-location h3 {
+      width: 250px;
+      font-size: 50px;
+      line-height: 48px;
+    }
+  
+    .footer-location p {
+      width: 500px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .footer-index {
+    background: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer-index h3 {
+    font-family: 'Roboto', serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer-index p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto 15px;
+}
+.social a {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+  /* Стилі для кнопок фільтрів */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.filter-btn-styled {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+  color: white;
+  background-color: var(--black);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filter-btn-styled:hover {
+  background-color: var(--mint);
+  transform: scale(1.05);
+}
+
+.filter-btn-styled.active {
+  background-color: var(--mint);
+}
+
+/* Адаптивність для планшетів */
+@media (min-width: 768px) {
+  .filters {
+      gap: 15px;
+      margin-bottom: 40px;
+  }
+
+  .filter-btn-styled {
+      padding: 20px 30px;
+      font-size: 20px;
+      letter-spacing: 3px;
+  }
+}
+
+/* Адаптивність для десктопів */
+@media (min-width: 1440px) {
+  .filters {
+      gap: 20px;
+      margin-bottom: 48px;
+  }
+
+  .filter-btn-styled {
+      padding: 24px 35px;
+      font-size: 22px;
+      letter-spacing: 3.5px;
+  }
+}
+/* Секція віршів */
+.poems-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.poem-card {
+  background-color: #f5f5f5;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.poem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.poem-card h3 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 32px;
+  line-height: 28px;
+  color: var(--black);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.poem-card .author {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.poem-card .excerpt {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--grey);
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+
+.poem-card .read-more {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+  background-color: transparent;
+  padding: 8px 0;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.poem-card .read-more:hover {
+  color: var(--mint);
+  text-decoration: underline;
+}
+
+/* Адаптивність для планшетів */
+@media (min-width: 768px) {
+  .poems-grid {
+      gap: 20px;
+      padding: 20px;
+  }
+
+  .poem-card {
+      padding: 32px;
+      min-height: 220px;
+  }
+
+  .poem-card h3 {
+      font-size: 36px;
+      line-height: 32px;
+      margin-bottom: 20px;
+  }
+
+  .poem-card .author {
+      font-size: 18px;
+      line-height: 26px;
+  }
+
+  .poem-card .excerpt {
+      font-size: 20px;
+      line-height: 30px;
+  }
+
+  .poem-card .read-more {
+      font-size: 20px;
+      letter-spacing: 2.5px;
+  }
+}
+
+/* Адаптивність для десктопів */
+@media (min-width: 1440px) {
+  .poems-grid {
+      gap: 40px;
+      padding: 40px;
+  }
+
+  .poem-card {
+      padding: 40px;
+      min-height: 240px;
+  }
+
+  .poem-card h3 {
+      font-size: 40px;
+      line-height: 36px;
+      margin-bottom: 24px;
+  }
+
+  .poem-card .author {
+      font-size: 20px;
+      line-height: 28px;
+  }
+
+  .poem-card .excerpt {
+      font-size: 24px;
+      line-height: 34px;
+  }
+
+  .poem-card .read-more {
+      font-size: 22px;
+      letter-spacing: 3px;
+  }
+}
+.poem-card {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* Модальне вікно */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background: #f5f5f5;
+  margin: 10% auto;
+  padding: 32px;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: 'Outfit', sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal-content h3 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 32px;
+  line-height: 28px;
+  color: var(--black);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.modal-content #modal-author {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey);
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.modal-content #modal-text {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--grey);
+  white-space: pre-line; /* Зберігає переноси рядків */
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  color: var(--black);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: var(--mint);
+}
+
+/* Адаптивність для планшетів */
+@media (min-width: 768px) {
+  .modal-content {
+      padding: 40px;
+      max-width: 700px;
+  }
+
+  .modal-content h3 {
+      font-size: 36px;
+      line-height: 32px;
+      margin-bottom: 20px;
+  }
+
+  .modal-content #modal-author {
+      font-size: 18px;
+      line-height: 26px;
+  }
+
+  .modal-content #modal-text {
+      font-size: 20px;
+      line-height: 30px;
+  }
+
+  .close {
+      font-size: 28px;
+  }
+}
+
+/* Адаптивність для десктопів */
+@media (min-width: 1440px) {
+  .modal-content {
+      padding: 48px;
+      max-width: 800px;
+  }
+
+  .modal-content h3 {
+      font-size: 40px;
+      line-height: 36px;
+      margin-bottom: 24px;
+  }
+
+  .modal-content #modal-author {
+      font-size: 20px;
+      line-height: 28px;
+  }
+
+  .modal-content #modal-text {
+      font-size: 24px;
+      line-height: 34px;
+  }
+
+  .close {
+      font-size: 32px;
+  }
+}
+
+/* Анімація появи */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.poem-card h3 {
+  font-family: 'Roboto';
+  font-size: 32px;
+  color: var(--black);
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.poem-card .author {
+  font-family:  'Roboto';
+  font-size: 20px;
+  color: var(--black);
+  margin-bottom: 10px;
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.poem-card .excerpt {
+  font-family: 'Roboto';
+  font-size: 22px;
+  color: var(--black);
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
+  flex-grow: 1;
+  
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.poem-card .excerpt a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.poem-card .excerpt a:hover {
+  color: #000;
+}
+
+.poem-card .read-more {
+  font-family: 'Roboto';
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--mint);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#modal-title {
+  font-family: 'Roboto';
+  font-size: 32px;
+  color: var(--black);
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+.filters .filter-btn {
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  background-color: #f4f4f4;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters .filter-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.filters .filter-btn-styled {
+  border-radius: 0;
+}
+.read-more {
+  font-family: 'Roboto';
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--mint);  /* Заміни на свій колір, наприклад #98ffb0 */
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block; /* Щоб padding і background працювали як кнопка */
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background-color: #58b5dc; /* Темніший відтінок для ховера */
+  color: white;
+}
+.footer-location {
+  background: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer-location h3 {
+  font-family: 'Robot', serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.footer-location p {
+  font-family: 'Robot', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto 15px;
+  color: #fff;
+}
+.footer-location .social a {
+  font-size: 24px;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
